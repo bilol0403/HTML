@@ -1,0 +1,26 @@
+.middle{
+    margin-top: 168px;
+    margin-bottom: 244px;
+    @include display(flex, space-around,none);
+    &__left{
+        margin-left: 50px;  
+    }
+    &__img{
+        width: 400px;
+        height: 470px;
+    }
+    &__title{
+        margin-top: 70px;
+        @extend %font;
+        @include text(40px, 48px);
+        color:$color2;
+    }
+    &__text{
+        width: 540px;  
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        @extend %font2;
+        @include text(16px, 26px);
+        color:$color2;
+    }
+}

@@ -1,0 +1,33 @@
+.box{
+    position: relative;
+    display: flex;
+    margin-top: 400px;
+    height: 474px;
+    background: #2C343E;
+    border-radius: 10px; 
+    &__right{
+        position: absolute;
+        left: 57%;
+        bottom: 20%; 
+    }
+    &__left{
+        position: relative;
+        width: 512px;
+        height: 767px;
+        padding-left: 85px;
+        padding-top: 40px;
+    }
+    &__title{
+        @extend %font;
+        @include text(40px, 48px);
+        color:$color3;
+    }
+    &__text{
+        width: 540px;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        @extend %font2;
+        @include text(16px, 26px);
+        color:$color3;
+    }
+}

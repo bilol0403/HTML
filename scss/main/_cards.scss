@@ -1,0 +1,30 @@
+.cards{
+    margin-left: 75px;
+    margin-bottom: 167px;
+    &__title{
+        margin-top: 90px;
+        padding-bottom: 78px;
+        @extend %font;
+        @include text( 24px, 32px);
+        color:$color;
+    }
+}
+.card{
+    &__list{
+        gap: 188px;
+        margin-bottom: 50px;
+       @include display(flex, none, center);
+    }
+    &__title{
+        padding-top: 68px;
+        padding-bottom: 24px;
+        @extend %font;
+        @include text(32px, 36px);
+        color:$color2;
+    }
+    &__text{
+        @extend %font2;
+        @include text(16px, 26px);
+        color:$color2;
+    }
+}
